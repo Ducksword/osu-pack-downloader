@@ -1,0 +1,10 @@
+#SCAPE OSU PACK FOLDERS FOR ID https://osu.ppy.sh/beatmaps/packs/  <ADD VARRIABLE HERE
+#INSERT ID INTO https://beatconnect.io/b/  <ADD VARRIABLE HERE
+#FIGURE OUT HOW TO INSERT MAP ID INTO BEAT CONNECT WITHOUT A TEXT DOCUMENT
+#FIGURE OUT HOW TO DOWNLOAD INTO A FOLDER
+#?????
+#PROFIT
+
+
+# PULLS THE PACK URL
+(Invoke-WebRequest -Uri https://osu.ppy.sh/beatmaps/packs/2100).Links
