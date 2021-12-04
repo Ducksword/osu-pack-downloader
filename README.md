@@ -11,9 +11,9 @@ It will then ask you to insert the starting number of the beatpacks you want to 
 It will then ask you to insert the ending number of beatpacks you want to download (ex. 200)
 Using those examples will download packs 100-200
 
-# [Click here to Download](https://github.com/Ducksword/osu-pack-downloader/releases/tag/osu-pack-downloaderV1.1)
+# [Click here to Download](https://github.com/Ducksword/osu-pack-downloader/releases/tag/osu-pack-downloaderV1.2)
 
 # Important Notes
-The downloader piggy backs off of kitsu.moe
+The downloader piggy backs off of beatconnect.io
 Because of this it is not fast in any stretch of the imagination
 HIGHLY RECOMMEND if downloading massive amounts of beatpacks to have a stable internet connection
