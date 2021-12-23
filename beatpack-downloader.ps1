@@ -10,13 +10,14 @@ While ($parameter1 -le $parameter2){
 
     $osuurl = "https://osu.ppy.sh/beatmaps/packs/$parameter1"
     $responce = (Invoke-WebRequest -Uri $osuurl).Links.href
-    $filter = $responce | Select-String -Pattern "https://osu.ppy.sh/beatmapsets/"
-    $mapset = $filter -replace "https://osu.ppy.sh/beatmapsets/"
+    $mapset = $responce | Select-String '(?<=https://osu.ppy.sh/beatmapsets/)\d+' |
+        ForEach-Object { $_.Matches[0].Value }
 
     $mapset | ForEach-Object {
+        Write-Output "Downloading $_"
         $wc = New-Object System.Net.WebClient
         $wc.DownloadFile($Beatconnect+$_, "$path\$_.osz")
-        Start-Sleep -Seconds 3
+        Start-Sleep -Seconds 1
     }
 
     $parameter1 = $parameter1 + 1
